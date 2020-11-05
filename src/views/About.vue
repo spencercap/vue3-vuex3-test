@@ -6,14 +6,19 @@
 			count: {{ $store.state.count }}
 			<button @click="bang()">bang</button>
 		</div>
+
+		<life-goals />
 	</div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineAsyncComponent, defineComponent } from 'vue';
 
 export default defineComponent({
 	name: 'About',
+	components: {
+		LifeGoals: defineAsyncComponent(() => import('./LifeGoals.vue'))
+	},
 	// props: {
 	//   msg: String,
 	// },
