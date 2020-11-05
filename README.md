@@ -1,4 +1,4 @@
-# v3-router-test
+# vue3-vuex3-test
 
 ## Project setup
 ```
